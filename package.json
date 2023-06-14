@@ -13,7 +13,6 @@
 	"license": "ISC",
 	"dependencies": {
 		"@varandas/clash-royale-api": "^1.1.12",
-		"axios": "^1.4.0",
 		"dotenv": "^16.1.4",
 		"express": "^4.18.2"
 	},
