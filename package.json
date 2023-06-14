@@ -1,0 +1,23 @@
+{
+	"name": "spartans-clan-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon src/server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@varandas/clash-royale-api": "^1.1.12",
+		"axios": "^1.4.0",
+		"dotenv": "^16.1.4",
+		"express": "^4.18.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}
