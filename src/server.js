@@ -15,18 +15,19 @@ app.use('/stats', stats);
 
 // Define all Clan Routes
 // Call getClans Method
-stats.get('/clan/:name/:locationId?/:minMembers?/:maxMembers?/:minScore?/:limit?/:after?/:before?', async (req, res) => {
+stats.get('/clan/search', async (req, res) => {
   try {
     const requestParams = {
-      name: req.params.name,
-      locationId: parseInt(req.params.locationId),
-      minMembers: parseInt(req.params.minMembers),
-      maxMembers: parseInt(req.params.maxMembers),
-      minScore: parseInt(req.params.minScore),
-      limits: parseInt(req.params.limit),
-      after: parseInt(req.params.after),
-      before: parseInt(req.params.before)
+      name: req.query.name,
+      locationId: req.query.locationId,
+      minMembers: req.query.minMembers,
+      maxMembers: req.query.maxMembers,
+      minScore: req.query.minScore,
+      limits: req.query.limit,
+      after: req.query.after,
+      before: req.query.before
     };
+    console.log(requestParams)
     const clanSearch = await api.getClans(requestParams);
     res.json(clanSearch);
   } catch (error) {
