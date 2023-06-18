@@ -3,4 +3,4 @@ steps:
     args: ["install"]
 
   - name: "gcr.io/cloud-builders/npm"
-    args: ["npm run production"]
+    args: ['run', 'production']

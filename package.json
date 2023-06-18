@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon src/server.js"
+		"start": "nodemon server.js",
+		"production": "SET Node_ENV=production& node server.js"
 	},
 	"keywords": [],
 	"author": "",
